@@ -13,7 +13,7 @@ module.exports = {
 
   output: {
     path: __dirname + '/public',
-    filename: 'app.min.js'
+    filename: 'app.js'
   },
 
   watch: NODE_ENV === 'development',
