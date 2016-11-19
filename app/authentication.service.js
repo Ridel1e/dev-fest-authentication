@@ -6,7 +6,7 @@ class AuthenticationService {
   constructor ($http, $localStorage) {
     'ngInject';
 
-    this.api = 'http://gdg-event-app.herokuapp.com';
+    this.api = 'https://gdg-event-app.herokuapp.com';
     this.$http = $http;
     this.$localStorage = $localStorage;
   }
