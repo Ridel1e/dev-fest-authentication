@@ -1,0 +1,18 @@
+<form name="$ctrl.authenticationForm" class="authentication-form">
+  <h3 class="authentication-form__header">
+    Введите свой email
+  </h3>
+  <md-input-container class="authentication-form__input">
+    <label>Email</label>
+    <input name="email" ng-model="$ctrl.email" type="email" required>
+    <ng-messages for="$ctrl.authenticationForm.email.$error">
+      <ng-message when="required">Пожалуйста, заполните поле</ng-message>
+      <ng-message when="email">Неверный email</ng-message>
+    </ng-messages>
+  </md-input-container>
+  <md-button ng-disabled="$ctrl.authenticationForm.$invalid"
+             class="md-accent md-raised"
+             ng-click="$ctrl.register($ctrl.email)">
+    Регистрация
+  </md-button>
+</form>

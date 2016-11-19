@@ -1,0 +1,24 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.authentication-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    .bold;
+    color: @secondary-text-color;
+    margin-bottom: 50px;
+  }
+
+  &__input {
+    color: @primary-color;
+    max-width: 400px;
+    width: 80%;
+
+    label, input {
+      font-size: 1.5em;
+    }
+  }
+}
